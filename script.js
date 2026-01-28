@@ -23,7 +23,7 @@ window.addEventListener('scroll', () => {
   }
 })
 
-
+//About
 
         
         //Projects section
