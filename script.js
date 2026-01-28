@@ -1,3 +1,4 @@
+   // Navbar Section
 const menu = document.getElementById("menuBtn");
         const mbMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById("menuIcon");
@@ -8,6 +9,24 @@ const menu = document.getElementById("menuBtn");
             menuIcon.classList.toggle('fa-bars');
             menuIcon.classList.toggle('fa-xmark');
         });
+
+
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 50){
+    navbar.classList.remove('bg-black','text-white');
+    navbar.classList.add('bg-transparent','backdrop-blur-md','text-black')
+  } else{
+    navbar.classList.remove('bg-transparent','backdrop-blur-md','text-black');
+    navbar.classList.add('bg-black','text-white');
+  }
+})
+
+
+
+        
+        //Projects section
 
 const cards = [
     {
